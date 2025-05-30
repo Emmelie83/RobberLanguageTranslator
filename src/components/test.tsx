@@ -14,7 +14,7 @@ const Test: React.FC = () => (
 			</p>
 
 			<img src={Coins} alt="Coins" className="h-40 w-auto mb-6" />
-			<button className="mb-6 px-4 py-2 text-amber-950 border rounded shadow hover:shadow-md transition-shadow cursor-pointer">
+			<button className="mb-6 px-4 py-2 text-amber-950 border bg-[#f0c87a] rounded shadow hover:shadow-md transition-shadow cursor-pointer">
 				Starta testet
 			</button>
 
