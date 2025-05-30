@@ -1,4 +1,5 @@
 import React from "react";
+import Coins from "../assets/img/coins.svg"
 
 const Test: React.FC = () => (
 	<section className="flex flex-col items-center text-center px-4">
@@ -6,18 +7,14 @@ const Test: React.FC = () => (
 			Testa din språkförståelse
 		</h2>
 
-		<div className="w-1/2 max-w-[500px]">
-			<p className="mb-4">
+		<div className="flex flex-col items-center w-1/2 max-w-[500px]">
+			<p className="mb-6">
 				Förstår du vad sjörövarna säger? Här får du sex fraser som du
 				kan testa dig med. Svarar du rätt belönas du med guldmynt!
 			</p>
 
-			<div className="mb-8">
-				<p className="mb-8 text-lg leading-[1.5em]"></p>
-				<div className="mb-8 text-lg leading-[1.5em]"></div>
-			</div>
-
-			<button className="mb-6 px-4 py-2 bg-amber-300 border rounded shadow hover:shadow-md transition-shadow">
+			<img src={Coins} alt="Coins" className="h-40 w-auto mb-6" />
+			<button className="mb-6 mt-10 px-4 py-2 text-amber-950 border rounded shadow hover:shadow-md transition-shadow cursor-pointer">
 				Starta testet
 			</button>
 
@@ -33,6 +30,7 @@ const Test: React.FC = () => (
 					type="text"
 					className="min-w-[20em] mb-6 px-3 py-1 border border-gray-400 rounded"
 				/>
+
 				<button className="px-4 py-2 bg-blue-600 text-white rounded shadow hover:shadow-md transition-shadow">
 					Svara
 				</button>
