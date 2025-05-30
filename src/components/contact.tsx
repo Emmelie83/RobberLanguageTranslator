@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
 				</p>
 
 				{/* Email Address */}
-				<address className="not-italic mt-6 mb-10">
+				<address className="not-italic mt-6 mb-12">
 					info@emmeliejohansson.com
 				</address>
 
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
 				<img
 					src={Skull}
 					alt="En dödskalle"
-					className="mx-auto w-30 h-auto mt-12"
+					className="mx-auto w-26 h-auto mt-12"
 				/>
 			</div>
 		</section>

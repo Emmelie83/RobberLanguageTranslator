@@ -3,9 +3,9 @@ import Paper from "../assets/img/Paper.png";
 
 const Rules: React.FC = () => (
 	<section
-		className="flex justify-center items-center bg-no-repeat bg-center -mt-46 h-[700px] mb-16"
+		className="flex justify-center items-center bg-no-repeat bg-center -mt-56 bg-contain h-[750px] mb-16"
 		style={{ backgroundImage: `url(${Paper})` }}>
-		<div className="text-center -mt-12 w-5/12">
+		<div className="text-center w-full max-w-2xl px-6 -mt-12">
 			<h2 className="mb-3 text-shadow-sm">
 				Tala rövarspråket som en äkta sjörövare!
 			</h2>
