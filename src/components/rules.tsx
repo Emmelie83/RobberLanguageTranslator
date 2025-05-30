@@ -1,40 +1,46 @@
 import React from "react";
-import Paper from "../assets/img/paper.svg";
+import Paper from "../assets/img/oldpaper.svg";
 
 const Rules: React.FC = () => (
-	<div
-		className="flex justify-center items-center bg-no-repeat bg-center -mt-12 min-h-[530px] mb-16"
+	<section
+		className="flex justify-center items-center bg-no-repeat bg-center -mt-32 h-[600px] mb-16"
 		style={{ backgroundImage: `url(${Paper})` }}>
-		<div className="text-center w-2/5">
-			<h2 className="text-3xl mb-3">
-				Tala rövarspråket som en äkta sjörövare!
-			</h2>
-			<h3 className="text-lg font-semibold mb-1">Grundregel</h3>
-			<ul>
-				<li className="mb-4">
-					Efter varje konsonant lägger du till ett ”o” och sedan samma
-					konsonant igen, t.ex.
-					<em>rövarspråket – rorövovarorsospoproråkoketot</em>
-				</li>
-			</ul>
-			<h3 className="text-lg font-semibold mb-1">Undantag</h3>
-			<ul>
+		<div className="text-center -mt-18 w-5/12">
+			<h2 className="mb-3">Tala rövarspråket som en äkta sjörövare!</h2>
+			<p>
+				Rövarspråket är ett enkelt kodspråk som blev populärt genom
+				Astrid Lindgrens romaner om Kalle Blomkvist. Grundregeln är att
+				man efter varje konsonant lägger till ett "o" och sedan samma
+				konsonant igen:
+			</p>
+			<p className="my-4">
+				<em>rövarspråket</em> → rorövovarorsospoproråkoketot
+			</p>
+			<p>
+				Eftersom rövarspråket i huvudsak är en talspråksbaserad kod görs
+				dock ofta vissa undantag från denna regel för att underlätta
+				uttalet:
+			</p>
+			<h4 className="font-semibold my-3">Undantag</h4>
+			<ul className="leading-relaxed">
 				<li>
-					”x” blir till ”ks”: <em>kex – kokekoksos</em>
-				</li>
-				<li>
-					”ck” blir till ”kk”: <em>tack – totakokkok</em>
-				</li>
-				<li>
-					sje- och tje-ljuden (sj, tj, stj, sk, skj, ssj, sh, sch, ch)
-					betraktas som en konsonant: <em>choklad – chochakokloladod</em>
+					”x” blir ”ks”: <em>kex</em> → kokekoksos
 				</li>
 				<li>
-					”ch” i "och" blir till ”k”: <em>och – okok</em>
+					”ck” blir ”kk”: <em>tack</em> → totakokkok
+				</li>
+				<li>
+					sje- och tje-ljuden betraktas som en konsonant:{" "}
+					<em>choklad</em> → chochakokloladod
+				</li>
+				<li>
+					”ch” framför konsonant eller i slutet av ord blir till ”k”:{" "}
+					<em>och</em> → okok
 				</li>
 			</ul>
 		</div>
-	</div>
+		<hr className="text-gray-50" />
+	</section>
 );
 
 export default Rules;

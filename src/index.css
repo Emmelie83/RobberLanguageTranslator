@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&family=UnifrakturMaguntia&display=swap');
 @import "tailwindcss";
 
 
@@ -7,7 +7,8 @@
 }
 
 :root {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
 
@@ -22,10 +23,30 @@
 }
 
 h1,
-h2 {
-  font-family: 'UnifrakturMaguntia';
+h2,
+h3 {
+  font-family: "UnifrakturMaguntia", "Times New Roman", Times, serif;
+  text-align: center;
 }
 
-em {
-  font-style: italic;
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+button {
+  font-family: "UnifrakturMaguntia", "Times New Roman", serif;
+  font-size: 26px;
+  
+}
+
+section {
+  padding: 4em 0;
 }
