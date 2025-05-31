@@ -9,7 +9,8 @@ const Translator: React.FC = () => {
   const [inputText, setInputText] = useState("");
   const [placeholderResetKey, setPlaceholderResetKey] = useState(0);
 	const [translatedText, setTranslatedText] = useState("");
-	const inputRef = useRef<HTMLTextAreaElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
+  const [isToRovarspraket, setIsToRovarspraket] = useState(true);
 
 	const handleTranslate = () => {
 		const result = translateRovarspraket(inputText);
@@ -24,9 +25,15 @@ const Translator: React.FC = () => {
 
 	return (
 		<section className="flex flex-col items-center justify-center px-4 py-8">
-			<h2 className="mb-8">Översätt till rövarspråket</h2>
+			<h2 className="mb-8">
+				{isToRovarspraket
+					? "Översätt till rövarspråket"
+					: "Översätt från rövarspråket"}
+			</h2>
 
-			<LanguageToggle />
+			<LanguageToggle
+				onToggle={() => setIsToRovarspraket((prev) => !prev)}
+			/>
 
 			<div className="flex flex-col lg:flex-row justify-center lg:gap-8">
 				<TranslatorInput
