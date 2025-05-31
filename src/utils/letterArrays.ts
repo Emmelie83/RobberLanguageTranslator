@@ -138,64 +138,12 @@ export function replaceSpecial(text: string): string {
 	return result;
 }
 
-export function changeChandC(textArr: string[]) : string[] {
-  const newTextArr = [];
-
-  for (let i = 0; i < textArr.length; i++) {
-      const currentChar = textArr[i];
-      const nextChar = textArr[i + 1];
-      const previousChar = textArr[i - 1];
-      // Justeringar görs när c följs av h
-      if (currentChar === "h" || currentChar === "H") {
-          if ((previousChar === "C" || previousChar === "c") && vowel.includes(nextChar)) {
-              newTextArr.pop();
-              // c + h + vokal blir till ʃ
-              newTextArr.push("ʃ");
-          } else if (previousChar === "C") {
-              newTextArr.pop();
-              // C + h blir till K
-              newTextArr.push("K");
-          } else if (previousChar === "c") {
-              newTextArr.pop();
-              // c + h blir till k
-              newTextArr.push("k");
-          } else {
-              // Om h inte föregås av c görs ingen ändring
-              newTextArr.push(currentChar);
-          }
-      // Justeringar görs när c följs av mjuk respektive hård vokal
-      } else if (currentChar === "C") {
-          if (vowelSoft.includes(nextChar)) {
-              // C följd av mjuk vokal blir till S
-              newTextArr.push("S");
-          } else {
-              // C följd av hård vokal blir till K
-              newTextArr.push("K");
-          }
-      } else if (currentChar === "c") {
-          if (vowelSoft.includes(nextChar)) {
-              // c följd av mjuk vokal blir till s
-              newTextArr.push("s");
-          } else {
-              // c följd av hård vokal blir till k
-              newTextArr.push("k");
-          }
-      } else {
-          // För alla andra tecken görs ingen ändring
-          newTextArr.push(currentChar);
-      }
-  }
-  // Den nya listan returneras
-  return newTextArr;
-}
-
 export function translateRovarspraket(input: string): string {
 	const replaced = replaceSpecial(input);
 	const chars = Array.from(replaced);
-	const changed = changeChandC(chars);
 
 	let translated = "";
-	for (const char of changed) {
+	for (const char of chars) {
 		translated += char;
 		if (cons.includes(char)) {
 			translated += "o" + char.toLowerCase();
