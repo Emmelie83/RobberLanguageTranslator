@@ -6,7 +6,8 @@ import LanguageToggle from "./components/translator/LanguageToggle";
 import ClearButton from "./components/translator/ClearButton";
 
 const Translator: React.FC = () => {
-	const [inputText, setInputText] = useState("");
+  const [inputText, setInputText] = useState("");
+  const [placeholderResetKey, setPlaceholderResetKey] = useState(0);
 	const [translatedText, setTranslatedText] = useState("");
 	const inputRef = useRef<HTMLTextAreaElement>(null);
 
@@ -18,7 +19,7 @@ const Translator: React.FC = () => {
 	const handleClear = () => {
 		setInputText("");
 		setTranslatedText("");
-		inputRef.current?.focus();
+		setPlaceholderResetKey((prev) => prev + 1);
 	};
 
 	return (
@@ -27,12 +28,13 @@ const Translator: React.FC = () => {
 
 			<LanguageToggle />
 
-			<div className="flex justify-center gap-8 flex-wrap">
+			<div className="flex flex-col lg:flex-row justify-center lg:gap-8">
 				<TranslatorInput
 					inputText={inputText}
 					onChange={setInputText}
 					onEnter={handleTranslate}
 					inputRef={inputRef}
+					resetPlaceholderTrigger={placeholderResetKey}
 				/>
 				<TranslatorOutput translatedText={translatedText} />
 			</div>

@@ -7,7 +7,7 @@ const Test: React.FC = () => (
 			Testa din språkförståelse
 		</h2>
 
-		<div className="flex flex-col items-center w-1/2 max-w-[500px]">
+		<div className="flex flex-col items-center lg:w-1/2 max-w-[500px]">
 			<p className="mb-6">
 				Förstår du vad sjörövarna säger? Här får du sex fraser som du
 				kan testa dig med. Svarar du rätt belönas du med guldmynt!

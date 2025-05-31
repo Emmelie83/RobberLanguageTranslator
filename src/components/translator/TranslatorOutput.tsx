@@ -5,7 +5,7 @@ const TranslatorOutput: React.FC<{ translatedText: string }> = ({
 }) => (
 	<textarea
 		readOnly
-		className="w-[600px] h-[400px] p-3 border-2 border-[#64635D] bg-amber-50 rounded mb-10 mt-8"
+		className="w-full lg:w-[600px] lg:h-[400px] p-3 border-2 border-[#64635D] bg-amber-50 rounded mb-10 mt-8"
 		value={translatedText}
 	/>
 );
