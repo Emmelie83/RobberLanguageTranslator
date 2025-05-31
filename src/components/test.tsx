@@ -2,7 +2,7 @@ import React from "react";
 import Coins from "../assets/img/coins.svg"
 
 const Test: React.FC = () => (
-	<section className="flex flex-col items-center text-center px-4">
+	<section id="test" className="flex flex-col items-center text-center px-4">
 		<h2 className="text-2xl font-semibold mb-4">
 			Testa din språkförståelse
 		</h2>

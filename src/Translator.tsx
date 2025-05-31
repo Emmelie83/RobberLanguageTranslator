@@ -24,7 +24,7 @@ const Translator: React.FC = () => {
 	};
 
 	return (
-		<section className="flex flex-col items-center justify-center px-4 py-8">
+		<section id="translator" className="flex flex-col items-center justify-center px-4 py-8">
 			<h2 className="mb-8">
 				{isToRovarspraket
 					? "Översätt till rövarspråket"

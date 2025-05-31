@@ -2,7 +2,7 @@ import React from "react";
 import Paper from "../assets/img/Paper.png";
 
 const Rules: React.FC = () => (
-	<section
+	<section id="rules"
 		className="flex justify-center items-center bg-no-repeat bg-center -mt-60 bg-contain h-[750px] mb-16"
 		style={{ backgroundImage: `url(${Paper})` }}>
 		<div className="text-center w-full max-w-2xl px-6 -mt-6">
