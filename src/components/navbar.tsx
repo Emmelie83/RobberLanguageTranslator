@@ -10,27 +10,27 @@ const Navbar: React.FC = () => {
 				{/* Desktop Links */}
 				<ul className="hidden md:flex space-x-6 text-gray-700 font-medium">
 					<li>
-						<a href="#home" className="hover:text-red-900">
+						<a href="#home" className="hover:text-amber-950">
 							Hem
 						</a>
 					</li>
 					<li>
-						<a href="#rules" className="hover:text-red-900">
+						<a href="#rules" className="hover:text-amber-950">
 							Om
 						</a>
 					</li>
 					<li>
-						<a href="#translator" className="hover:text-red-900">
+						<a href="#translator" className="hover:text-amber-950">
 							Översättare
 						</a>
 					</li>
 					<li>
-						<a href="#test" className="hover:text-red-900">
+						<a href="#test" className="hover:text-amber-950">
 							Språktest
 						</a>
 					</li>
 					<li>
-						<a href="#contact" className="hover:text-red-900">
+						<a href="#contact" className="hover:text-amber-950">
 							Kontakt
 						</a>
 					</li>
