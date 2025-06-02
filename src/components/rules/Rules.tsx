@@ -1,5 +1,5 @@
 import React from "react";
-import Paper from "../assets/img/Paper.png";
+import Paper from "../../assets/img/Paper.png";
 
 const Rules: React.FC = () => (
 	<section id="rules"

@@ -1,17 +1,14 @@
-
-import './App.css'
-import './index.css'
-import Hero from './components/hero.tsx'
-import Rules from './components/rules.tsx'
-import Translator from './Translator'
-import Test from './components/test.tsx'
-import Contact from './components/contact.tsx'
-import Footer from './components/footer.tsx'
+import "./App.css";
+import "./index.css";
+import Hero from "./components/hero/HeroSection.tsx";
+import Rules from "./components/rules/Rules.tsx";
+import Translator from "./components/translator/TranslatorSection.tsx";
+import Contact from "./components/contact/ContactSection.tsx";
+import Test from "./components/language-test/LanguageTest.tsx";
+import Footer from "./components/footer.tsx";
 
 function App() {
-  
-
-  return (
+	return (
 		<>
 			<Hero />
 			<Rules />
@@ -28,11 +25,11 @@ function App() {
 			<hr
 				className="h-0.5 shadow-gray-300 shadow-md"
 				style={{ borderStyle: "inset" }}
-      />
-      <Contact />
-      <Footer />
+			/>
+			<Contact />
+			<Footer />
 		</>
-  );
+	);
 }
 
-export default App
+export default App;

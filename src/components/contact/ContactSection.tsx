@@ -1,5 +1,5 @@
 import React from "react";
-import Skull from "../assets/img/skull.png"; // Adjust path as needed
+import Skull from "../../assets/img/skull.png";
 
 const Contact: React.FC = () => {
 	return (

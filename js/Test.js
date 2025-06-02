@@ -11,18 +11,18 @@ class Test {
     constructor() {
         //En lista med fraser på rövarspråket (kan byggas ut utan problem)
         this.testArray = [
-            "ʃoʃu ʃoʃukoka ʃoʃömomänon",
-            "lolanondodkokrorabobboba",
-            "Lolanondod i sosikoktote",
-            "Alollole momanon popå dodäkokkok",
-            "Fofemomtotonon gogasostotaror popå dodödod momanonsos kokisostota",
-            "Hohejoj okok hohå okok enon foflolasoskoka momedod roromom",
-            "Gogå popå poplolanonkokanon",
-            "Jojagog momåsostote momatota mominon popapopegogojoja",
-            "Hohisossosa sosegogelol",
-            "Kokasostota anonkokaror",
-            "Dodetot kokloliaror i ʃoʃägoggogetot",
-            "Momitottot totroräbobenon äror sosnonygoggogarore änon doditottot"
+          "Sjosju sjosjukoka sjosjömomänon",
+          "lolanondodkokrorabobboba",
+          "Lolanondod i sosikoktote",
+          "Alollole momanon popå dodäkokkok",
+          "Fofemomtotonon gogasostotaror popå dodödod momanonsos kokisostota",
+          "Hohejoj okok hohå okok enon foflolasoskoka momedod roromom",
+          "Gogå popå poplolanonkokanon",
+          "Jojagog momåsostote momatota mominon popapopegogojoja",
+          "Hohisossosa sosegogelol",
+          "Kokasostota anonkokaror",
+          "Dodetot kokloliaror i skoskägoggogetot",
+          "Momitottot totroräbobenon äror sosnonygoggogarore änon doditottot"
         ];
 
         //En lista med motsvarande fraser på vanlig svenska

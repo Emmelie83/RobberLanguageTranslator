@@ -1,16 +1,24 @@
 import React, { useState, useRef } from "react";
-import { translateRovarspraket } from "./utils/letterArrays";
-import TranslatorInput from "./components/translator/TranslatorInput";
-import TranslatorOutput from "./components/translator/TranslatorOutput";
-import LanguageToggle from "./components/translator/LanguageToggle";
-import ClearButton from "./components/translator/ClearButton";
+import { translateRovarspraket } from "../../utils/letterArrays";
+import TranslatorInput from "./TranslatorInput";
+import TranslatorOutput from "./TranslatorOutput";
+import LanguageToggle from "./TranslatorLanguageToggle";
+import ClearButton from "./TranslatorClearButton";
+
+export interface TranslatorInputProps {
+	inputText: string;
+	onChange: (text: string) => void;
+	onEnter: () => void;
+	inputRef: React.RefObject<HTMLTextAreaElement | null>;
+	resetPlaceholderTrigger?: number;
+}
 
 const Translator: React.FC = () => {
-  const [inputText, setInputText] = useState("");
-  const [placeholderResetKey, setPlaceholderResetKey] = useState(0);
+	const [inputText, setInputText] = useState("");
+	const [placeholderResetKey, setPlaceholderResetKey] = useState(0);
 	const [translatedText, setTranslatedText] = useState("");
-  const inputRef = useRef<HTMLTextAreaElement>(null);
-  const [isToRovarspraket, setIsToRovarspraket] = useState(true);
+	const inputRef = useRef<HTMLTextAreaElement>(null);
+	const [isToRovarspraket, setIsToRovarspraket] = useState(true);
 
 	const handleTranslate = () => {
 		const result = translateRovarspraket(inputText);
@@ -24,7 +32,9 @@ const Translator: React.FC = () => {
 	};
 
 	return (
-		<section id="translator" className="flex flex-col items-center justify-center px-4 py-8">
+		<section
+			id="translator"
+			className="flex flex-col items-center justify-center px-4 py-8">
 			<h2 className="mb-8">
 				{isToRovarspraket
 					? "Översätt till rövarspråket"
