@@ -45,3 +45,7 @@ button {
 section {
   padding: 6em 0 6em;
 }
+
+li {
+  margin: 10px 0;
+}
