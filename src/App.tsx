@@ -5,7 +5,7 @@ import Rules from "./components/rules/Rules.tsx";
 import Translator from "./components/translator/TranslatorSection.tsx";
 import Contact from "./components/contact/ContactSection.tsx";
 import Test from "./components/language-test/LanguageTest.tsx";
-import Footer from "./components/footer.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
 	return (

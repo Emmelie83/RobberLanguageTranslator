@@ -1,11 +1,8 @@
 import React from "react";
-import Paper from "../../assets/img/Paper.png";
-
 const Rules: React.FC = () => (
 	<section
 		id="rules"
-		className="flex justify-center items-center bg-no-repeat bg-center -mt-60 bg-contain h-[750px] mb-16"
-		style={{ backgroundImage: `url(${Paper})` }}>
+		className="bg-cover bg-center -mt-30 lg:-mt-60 lg:h-[750px] mb-16 bg-[url('../../public/paper-small.png')]">
 		<div className="text-center w-full max-w-2xl px-6 -mt-6">
 			<h2 className="mb-3 text-shadow-sm">
 				Tala rövarspråket som en riktig sjörövare!
@@ -20,7 +17,8 @@ const Rules: React.FC = () => (
 						Efter varje konsonant lägger du till ett "o" och samma
 						konsonant igen.
 					</strong>
-				<p>Exempel: rövarspråket → rorövovarorsospoproråkoketot</p></li>
+					<p>Exempel: rövarspråket → rorövovarorsospoproråkoketot</p>
+				</li>
 			</ul>
 			<p className="font-semibold my-3">
 				Men för att göra språket lättare att säga högt finns vissa
