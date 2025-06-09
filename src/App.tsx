@@ -1,11 +1,12 @@
 import "./App.css";
+import Contact from "./components/contact/ContactSection";
+import Footer from "./components/Footer";
+import Hero from "./components/hero/HeroSection";
+import Test from "./components/language-test/LanguageTest";
+import Rules from "./components/rules/Rules";
+import Translator from "./components/translator/TranslatorSection";
 import "./index.css";
-import Hero from "./components/hero/HeroSection.tsx";
-import Rules from "./components/rules/Rules.tsx";
-import Translator from "./components/translator/TranslatorSection.tsx";
-import Contact from "./components/contact/ContactSection.tsx";
-import Test from "./components/language-test/LanguageTest.tsx";
-import Footer from "./components/Footer.tsx";
+
 
 function App() {
 	return (

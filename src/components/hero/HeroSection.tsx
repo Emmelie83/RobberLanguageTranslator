@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
 
+
 const Hero: React.FC = () => (
 	<div id="home" className="">
 		<Navbar />
