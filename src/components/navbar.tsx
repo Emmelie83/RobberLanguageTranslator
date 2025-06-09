@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
 				<h1 className="text-amber-950 py-1">Rövarspråket</h1>
 
 				{/* Desktop Links */}
-				<ul className="hidden md:flex space-x-6 text-gray-700 font-medium">
+				<ul className="hidden md:flex space-x-6 gap-4 text-gray-700 font-medium">
 					<li>
 						<a href="#home" className="hover:text-amber-950">
 							Hem

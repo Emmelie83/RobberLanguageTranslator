@@ -8,7 +8,7 @@ const Rules: React.FC = () => (
 		<div
 			className="text-center bg-[url('/paper-small.png')]
     lg:bg-[url('/paper.png')] bg-cover bg-center pt-10 px-2 h-[900px] -mt-50">
-			<div className="lg:w-3/4 mx-auto mt-10">
+			<div className="lg:w-11/12 mx-auto mt-10 lg:mt-30">
 				<h2 className="mb-3 text-shadow-sm ">
 					Tala rövarspråket som en riktig sjörövare!
 				</h2>
