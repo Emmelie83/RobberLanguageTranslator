@@ -14,7 +14,7 @@ const Hero: React.FC = () => (
 
 		{/* Desktop Background */}
 		<div
-			className="hidden lg:flex bg-cover bg-center h-[750px] flex-col justify-center items-center"
+			className="hidden lg:flex bg-cover bg-center h-[700px] flex-col justify-center items-center"
 			style={{ backgroundImage: `url(${HeroImageDesktop})` }}></div>
 	</div>
 );
