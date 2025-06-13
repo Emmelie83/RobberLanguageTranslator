@@ -1,10 +1,21 @@
 import React from "react";
 import Navbar from "../Navbar";
+import HeroImageMobile from "../../assets/img/hero-mobile.png";
+import HeroImageDesktop from "../../assets/img/hero-desktop.png";
 
 const Hero: React.FC = () => (
-	<div id="home" className="">
+	<div id="home">
 		<Navbar />
-		<div className="bg-cover bg-left h-[640px] flex flex-col justify-center items-center bg-[url('./hero.png')]"></div>
+
+		{/* Mobile Background */}
+		<div
+			className="lg:hidden flex flex-col justify-center items-center bg-cover bg-center h-[500px] "
+			style={{ backgroundImage: `url(${HeroImageMobile})` }}></div>
+
+		{/* Desktop Background */}
+		<div
+			className="hidden lg:flex bg-cover bg-center h-[750px] flex-col justify-center items-center"
+			style={{ backgroundImage: `url(${HeroImageDesktop})` }}></div>
 	</div>
 );
 

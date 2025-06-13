@@ -1,53 +1,42 @@
 import React from "react";
+
 const Rules: React.FC = () => (
 	<section
 		id="rules"
-		className="flex flex-col items-center  lg:-mt-40 lg:h-[750px]
-    mb-16
-    ">
-		<div
-			className="text-center bg-[url('/paper-small.png')]
-    lg:bg-[url('/paper.png')] bg-cover bg-center pt-10 px-2 h-[900px] -mt-50">
-			<div className="lg:w-11/12 mx-auto mt-10 lg:mt-30">
-				<h2 className="mb-3 text-shadow-sm ">
-					Tala rövarspråket som en riktig sjörövare!
-				</h2>
-				<p className="mb-4">
-					Rövarspråket är ett kul kodspråk som blev känt i Astrid
-					Lindgrens böcker om Kalle Blomkvist. Reglerna är enkla:
-				</p>
-				<ul>
-					<li>
-						<strong>
-							Efter varje konsonant lägger du till ett "o" och
-							samma konsonant igen.
-						</strong>
-						<p className="mt-4">
-							Exempel: rövarspråket → rorövovarorsospoproråkoketot
-						</p>
-					</li>
-				</ul>
-				<p className="font-semibold mt-8 mb-4">
-					Men för att göra språket lättare att säga högt finns vissa
-					undantag:
-				</p>
-				<ul>
-					<li>
-						<strong>”x” uttalas som ”ks”</strong>{" "}
-						<p>Exempel: kex → kokekoksos</p>
-					</li>
-					<li>
-						<strong>”ck” uttalas som ”kk”</strong>{" "}
-						<p>Exempel: tack → totakokkok</p>
-					</li>
-					<li>
-						<strong>
-							sje- och tje-ljud räknas som en konsonant
-						</strong>{" "}
-						<p>Exempel: choklad → chochakokloladod</p>
-					</li>
-				</ul>
-			</div>
+		className="rules-content flex justify-center items-center bg-no-repeat bg-center -mt-60 bg-contain h-[750px] mb-16">
+		<div className="text-center w-full max-w-2xl px-6 -mt-6">
+			<h2 className="mb-3 text-shadow-sm">
+				Tala rövarspråket som en riktig sjörövare!
+			</h2>
+			<p>
+				Rövarspråket är ett lekfullt kodspråk
+				som blev känt genom Astrid Lindgrens böcker om mästerdetektiven
+				Kalle Blomkvist. Det bygger på en enkel regel:{" "}
+				<strong>
+					Efter varje konsonant lägger man till ett "o" och sedan
+					samma konsonant igen:
+				</strong>
+			</p>
+			<p className="my-4">rövarspråket → rorövovarorsospoproråkoketot</p>
+			<h4 className="font-semibold my-3">Men det finns undantag!</h4>
+			<p className="mb-3">
+				Eftersom rövarspråket i grunden är tänkt att talas högt, gör
+				man ibland avsteg från huvudregeln för att underlätta uttalet:
+			</p>
+			<ul>
+				<li>
+					<strong>”x” uttalas som ”ks”</strong>
+					<p>kex → kokekoksos</p>
+				</li>
+				<li>
+					<strong>”ck” uttalas som ”kk”</strong>
+					<p>tack → totakokkok</p>
+				</li>
+				<li>
+					<strong>sje- och tje-ljud räknas som en konsonant</strong>
+					<p>choklad → chochakokloladod</p>
+				</li>
+			</ul>
 		</div>
 	</section>
 );

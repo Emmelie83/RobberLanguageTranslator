@@ -87,3 +87,16 @@ button {
 li {
   margin: 1rem 0;
 }
+
+.rules-content {
+  background-image: url('./assets/img/paper-small.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Media query for desktops */
+@media (min-width: 1024px) {
+  .rules-content {
+    background-image: url('./assets/img/paper.png');
+  }
+}
