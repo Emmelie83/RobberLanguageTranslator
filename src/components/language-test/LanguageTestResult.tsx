@@ -1,6 +1,7 @@
 import React from "react";
 import Crab from "../../assets/img/crab.png";
 import Coin from "../../assets/img/coin.png";
+import RestartTestButton from "./RestartTestButton";
 
 type Props = {
 	correctCount: number;
@@ -26,7 +27,7 @@ const TestResult: React.FC<Props> = ({ correctCount, onRestart }) => {
 
 			<div className="flex justify-center gap-2 flex-wrap mb-4">
 				{correctCount === 0 ? (
-					<img src={Crab} alt="En krabba" className="h-20" />
+					<img src={Crab} alt="En krabba" className="h-30 my-10" />
 				) : (
 					Array.from({ length: correctCount }).map((_, i) => (
 						<img
@@ -38,12 +39,7 @@ const TestResult: React.FC<Props> = ({ correctCount, onRestart }) => {
 					))
 				)}
 			</div>
-
-			<button
-				onClick={onRestart}
-				className="px-4 py-2 text-amber-950 border bg-[#f3c569] rounded shadow hover:shadow-md transition-shadow cursor-pointer">
-				Börja om
-			</button>
+        <RestartTestButton onRestart={onRestart} />
 		</div>
 	);
 };

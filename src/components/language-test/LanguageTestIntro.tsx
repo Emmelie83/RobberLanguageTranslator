@@ -1,5 +1,6 @@
 import React from "react";
 import Coins from "../../assets/img/coins.svg";
+import StartTestButton from "./StartTestButton";
 
 type Props = {
 	onStart: () => void;
@@ -11,12 +12,9 @@ const TestIntro: React.FC<Props> = ({ onStart }) => (
 			Förstår du vad sjörövarna säger? Här får du sex fraser som du kan
 			testa dig med. Svarar du rätt belönas du med guldmynt!
 		</p>
-		<img src={Coins} alt="Coins" className="h-40 w-auto mb-6" />
-		<button
-			className="mb-6 px-4 py-2 text-amber-950 border bg-[#f3c569] rounded shadow hover:shadow-md transition-shadow cursor-pointer"
-			onClick={onStart}>
-			Starta testet
-		</button>
+		<img src={Coins} alt="Coins" className="h-40 w-auto my-6" />
+		{/* Pass the onStart prop here: */}
+		<StartTestButton onStart={onStart} />
 	</div>
 );
 

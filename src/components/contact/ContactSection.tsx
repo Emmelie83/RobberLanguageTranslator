@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
 			<img
 				src={Skull}
 				alt="En dödskalle"
-				className="w-26 h-auto mt-12 mx-auto"
+				className="w-30 h-auto my-10 mx-auto"
 			/>
 		</div>
 	);
