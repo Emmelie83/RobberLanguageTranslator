@@ -13,20 +13,8 @@ function App() {
 		<>
 			<HeroSection />
 			<Rules />
-			<hr
-				className="h-0.5 shadow-gray-300 shadow-md"
-				style={{ borderStyle: "inset" }}
-			/>
 			<Translator />
-			<hr
-				className="h-0.5 shadow-gray-300 shadow-md"
-				style={{ borderStyle: "inset" }}
-			/>
 			<Test />
-			<hr
-				className="h-0.5 shadow-gray-300 shadow-md"
-				style={{ borderStyle: "inset" }}
-			/>
 			<ContactSection />
 			<Footer />
 		</>
