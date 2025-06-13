@@ -34,7 +34,7 @@ const TestResult: React.FC<Props> = ({ correctCount, onRestart }) => {
 							key={i}
 							src={Coin}
 							alt="Ett guldmynt"
-							className="h-10"
+							className="h-15 my-10"
 						/>
 					))
 				)}
