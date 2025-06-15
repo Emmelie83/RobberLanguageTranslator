@@ -4,6 +4,7 @@ import TranslatorInput from "./TranslatorInput";
 import TranslatorOutput from "./TranslatorOutput";
 import LanguageToggle from "./TranslatorLanguageToggle";
 import ClearButton from "./TranslatorClearButton";
+import TranslateButton from "./TranslateButton";
 
 export interface TranslatorInputProps {
 	inputText: string;
@@ -55,8 +56,11 @@ const Translator: React.FC = () => {
 				/>
 				<TranslatorOutput translatedText={translatedText} />
 			</div>
-
-			<ClearButton onClick={handleClear} />
+			{translatedText === "" ? (
+				<TranslateButton onClick={handleTranslate} />
+			) : (
+				<ClearButton onClick={handleClear} />
+			)}
 		</section>
 	);
 };
