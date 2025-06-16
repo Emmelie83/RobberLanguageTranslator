@@ -5,7 +5,7 @@ const Contact: React.FC = () => {
 	return (
 		<div
 			id="contact"
-			className="mx-auto pt-24  pb-18 text-center lg:w-1/2 max-w-[500px]">
+			className="mx-auto pt-24  pb-18 text-center lg:w-1/2 max-w-[500px] px-3">
 			{/* Section Heading */}
 			<h2 className="mb-4">Kontakt</h2>
 

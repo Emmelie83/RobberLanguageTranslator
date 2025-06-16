@@ -3,8 +3,9 @@ import React from "react";
 const Rules: React.FC = () => (
 	<section
 		id="rules"
-		className="">
-		<div className="rules-content flex flex-col justify-center bg-no-repeat bg-center bg-contain h-[850px] -mt-40 lg:-mt-70 text-center w-full max-w-2xl px-3">
+		className="flex justify-center">
+    <div className="rules-content flex flex-col justify-center lg:w-2/3 bg-no-repeat bg-center bg-contain h-[850px] -mt-34 lg:-mt-70 text-center px-3">
+      <div className="mx-auto px-20">
 			<h2 className="mb-3 text-shadow-sm">
 				Tala rövarspråket som en riktig sjörövare!
 			</h2>
@@ -36,7 +37,8 @@ const Rules: React.FC = () => (
 					<strong>sje- och tje-ljud räknas som en konsonant</strong>
 					<p>choklad → chochokokloladod</p>
 				</li>
-			</ul>
+        </ul>
+        </div>
 		</div>
 	</section>
 );
