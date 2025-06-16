@@ -35,7 +35,7 @@ const Translator: React.FC = () => {
 	return (
 		<section
 			id="translator"
-			className="flex flex-col items-center justify-center px-4 py-8">
+			className="flex flex-col items-center justify-center py-8">
 			<h2 className="mb-8">
 				{isToRovarspraket
 					? "Översätt till rövarspråket"
@@ -46,7 +46,7 @@ const Translator: React.FC = () => {
 				onToggle={() => setIsToRovarspraket((prev) => !prev)}
 			/>
 
-			<div className="flex flex-col lg:flex-row justify-center lg:gap-8">
+			<div className="flex flex-col w-full lg:flex-row justify-center lg:gap-8">
 				<TranslatorInput
 					inputText={inputText}
 					onChange={setInputText}

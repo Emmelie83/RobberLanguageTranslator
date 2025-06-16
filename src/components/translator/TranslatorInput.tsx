@@ -36,7 +36,7 @@ const TranslatorInput: React.FC<TranslatorInputProps> = ({
 					? "Skriv text som du vill översätta och tryck enter"
 					: ""
 			}
-			className="h-[300px] lg:w-[600px] lg:h-[400px] p-3 bg-[#FFF7E6] shadow-md shadow-gray-300 rounded mb-10 mt-8 focus:outline-none"
+			className="w-full min-h-50 lg:w-[600px] lg:h-[400px] p-3 bg-[#FFF7E6] shadow-md shadow-gray-300 rounded mb-1 lg:mb-10 mt-8 focus:outline-none"
 		/>
 	);
 };
