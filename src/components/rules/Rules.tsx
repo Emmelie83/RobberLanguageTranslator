@@ -5,7 +5,7 @@ const Rules: React.FC = () => (
 		id="rules"
 		className="flex justify-center">
     <div className="rules-content flex flex-col justify-center lg:w-2/3 bg-no-repeat bg-center bg-contain h-[850px] -mt-34 lg:-mt-70 text-center px-3">
-      <div className="mx-auto px-20">
+      <div className="mx-auto px-30">
 			<h2 className="mb-3 text-shadow-sm">
 				Tala rövarspråket som en riktig sjörövare!
 			</h2>
