@@ -21,7 +21,7 @@ const exceptionRules = [
 
 const Rules: React.FC = () => (
 	<section id="rules" className="flex justify-center">
-		<div className="rules-content flex flex-col justify-center lg:w-2/3 bg-no-repeat bg-center bg-contain h-[850px] -mt-34 lg:-mt-70 text-center px-3">
+		<div className="rules-content flex flex-col justify-center lg:w-2/3 bg-no-repeat bg-center bg-contain h-[900px] -mt-34 lg:-mt-70 text-center px-3">
 			<div className="mx-auto max-w-[650px] px-3">
 				<h2 className="mb-3 text-shadow-sm">
 					Tala rövarspråket som en riktig sjörövare!
