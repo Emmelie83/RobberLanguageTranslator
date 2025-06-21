@@ -8,7 +8,7 @@ type Props = {
 	onRestart: () => void;
 };
 
-const TestResult: React.FC<Props> = ({ correctCount, onRestart }) => {
+export default function TestResult({ correctCount, onRestart }: Props) {
 	const getFeedbackText = () => {
 		if (correctCount === 0) return "Arrrrg. Dig borde man nästan kölhala!";
 		if (correctCount === 1) return "Ojdå, du får nog öva lite!";
@@ -42,6 +42,4 @@ const TestResult: React.FC<Props> = ({ correctCount, onRestart }) => {
         <RestartTestButton onRestart={onRestart} />
 		</div>
 	);
-};
-
-export default TestResult;
+}

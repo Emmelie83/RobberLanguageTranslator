@@ -1,4 +1,3 @@
-import React from "react";
 import Coins from "../../assets/img/coins.svg";
 import StartTestButton from "./StartTestButton";
 
@@ -6,7 +5,8 @@ type Props = {
 	onStart: () => void;
 };
 
-const TestIntro: React.FC<Props> = ({ onStart }) => (
+export default function TestIntro({ onStart }: Props) {
+  return (
 	<div className="flex flex-col items-center lg:w-1/2 max-w-[500px] px-3">
 		<p className="mb-6">
 			Förstår du vad sjörövarna säger? Här får du sex fraser som du kan
@@ -17,5 +17,4 @@ const TestIntro: React.FC<Props> = ({ onStart }) => (
 		<StartTestButton onStart={onStart} />
 	</div>
 );
-
-export default TestIntro;
+}

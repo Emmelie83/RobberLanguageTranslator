@@ -14,7 +14,7 @@ export interface TranslatorInputProps {
 	resetPlaceholderTrigger?: number;
 }
 
-const Translator: React.FC = () => {
+export default function Translator() {
 	const [inputText, setInputText] = useState("");
 	const [placeholderResetKey, setPlaceholderResetKey] = useState(0);
 	const [translatedText, setTranslatedText] = useState("");
@@ -63,6 +63,4 @@ const Translator: React.FC = () => {
 			)}
 		</section>
 	);
-};
-
-export default Translator;
+}

@@ -1,7 +1,6 @@
-import React from "react";
 import { Menu } from "lucide-react";
 
-const Navbar: React.FC = () => {
+export default function Navbar() {
 	return (
 		<header className="sticky top-0 z-50 bg-white shadow-md">
 			<nav className="max-w-8xl mx-auto px-2 lg:pl-8 lg:pr-12 flex items-center justify-between">
@@ -43,6 +42,4 @@ const Navbar: React.FC = () => {
 			</nav>
 		</header>
 	);
-};
-
-export default Navbar;
+}

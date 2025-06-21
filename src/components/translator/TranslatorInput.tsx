@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import type { TranslatorInputProps } from "./TranslatorSection";
 
-const TranslatorInput: React.FC<TranslatorInputProps> = ({
+export default function TranslatorInput({
 	inputText,
 	onChange,
 	onEnter,
 	inputRef,
 	resetPlaceholderTrigger,
-}) => {
+}: TranslatorInputProps) {
 	const [showPlaceholder, setShowPlaceholder] = useState(true);
 
 	useEffect(() => {
@@ -19,7 +19,7 @@ const TranslatorInput: React.FC<TranslatorInputProps> = ({
 			e.preventDefault();
 			onEnter();
 		}
-	};
+	}
 
 	return (
 		<textarea
@@ -39,6 +39,4 @@ const TranslatorInput: React.FC<TranslatorInputProps> = ({
 			className="w-full min-h-50 lg:w-[600px] lg:h-[400px] p-3 bg-[#FFF7E6] shadow-md shadow-gray-300 rounded mb-1 lg:mb-10 mt-8 focus:outline-none"
 		/>
 	);
-};
-
-export default TranslatorInput;
+}

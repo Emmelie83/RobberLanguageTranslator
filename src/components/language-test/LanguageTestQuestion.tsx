@@ -1,4 +1,3 @@
-import React from "react";
 import SubmitButton from "./SubmitButton";
 
 type Props = {
@@ -9,13 +8,13 @@ type Props = {
 	onSubmit: () => void;
 };
 
-const Question: React.FC<Props> = ({
+export default function Question({
 	question,
 	questionNumber,
 	answer,
 	onAnswerChange,
 	onSubmit,
-}) => {
+}: Props) {
 	const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
 		if (e.key === "Enter") {
 			e.preventDefault();
@@ -38,6 +37,4 @@ const Question: React.FC<Props> = ({
 			<SubmitButton onSubmit={onSubmit} />
 		</div>
 	);
-};
-
-export default Question;
+}

@@ -1,5 +1,3 @@
-import React from "react";
-
 const exceptionRules = [
 	{
 		title: "”x” uttalas som ”ks”",
@@ -19,7 +17,8 @@ const exceptionRules = [
 	},
 ];
 
-const Rules: React.FC = () => (
+export default function Rules() {
+  return (
 	<section id="rules" className="flex justify-center">
 		<div className="rules-content flex flex-col justify-center lg:w-2/3 bg-no-repeat bg-center bg-contain h-[900px] -mt-34 lg:-mt-70 text-center px-3">
 			<div className="mx-auto max-w-[650px] px-3">
@@ -56,5 +55,4 @@ const Rules: React.FC = () => (
 		</div>
 	</section>
 );
-
-export default Rules;
+} 

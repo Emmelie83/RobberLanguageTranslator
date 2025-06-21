@@ -14,7 +14,7 @@ const getRandomIndexes = (max: number, count: number) => {
 	return Array.from(result);
 };
 
-const Test: React.FC = () => {
+export default function Test() {
 	const [isStarted, setIsStarted] = useState(false);
 	const [questionIndexes, setQuestionIndexes] = useState<number[]>([]);
 	const [currentIndex, setCurrentIndex] = useState(0);
@@ -70,6 +70,4 @@ const Test: React.FC = () => {
 			)}
 		</section>
 	);
-};
-
-export default Test;
+}

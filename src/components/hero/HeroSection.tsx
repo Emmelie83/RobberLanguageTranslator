@@ -1,9 +1,9 @@
-import React from "react";
 import Navbar from "../Navbar";
 import HeroImageMobile from "../../assets/img/hero-mobile.png";
 import HeroImageDesktop from "../../assets/img/hero-desktop.png";
 
-const Hero: React.FC = () => (
+export default function Hero() {
+return(
 	<div id="home">
 		<Navbar />
 
@@ -18,5 +18,5 @@ const Hero: React.FC = () => (
 			style={{ backgroundImage: `url(${HeroImageDesktop})` }}></div>
 	</div>
 );
+}
 
-export default Hero;
