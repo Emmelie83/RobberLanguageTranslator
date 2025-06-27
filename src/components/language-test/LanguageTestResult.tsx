@@ -1,4 +1,3 @@
-import React from "react";
 import Crab from "../../assets/img/crab.png";
 import Coin from "../../assets/img/coin.png";
 import RestartTestButton from "./RestartTestButton";
